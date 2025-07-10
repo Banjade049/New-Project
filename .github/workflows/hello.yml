@@ -9,28 +9,23 @@ jobs:
   First-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Say Hello
-        run: echo "File is changed"
+      - name: Checkout Code
+        uses: actions/checkout@v3
 
   Second-job: 
     runs-on: ubuntu-latest
     steps:
-      - name: Show date
-        run: |
-          export TZ=Asia/Kathmandu
-          date
+      - name: Setup Node.js
+        uses: actions/setup-node@v3 
           
-  Third-job:
-   runs-on: ubuntu-latest
-   steps:
-     - name: print in different line
-       run: |
-         echo "sam"
-         echo "hari"
-         echo " ram"
+  #Third-job:
+  # runs-on: ubuntu-latest
+   #...steps:
+     #- name: print in different line
+       #run: 
 
   Fourth-job:
     runs-on: ubuntu-latest
     steps:
-      - name: using semiclon
-        run: echo "ram"; echo "hari"; echo "jack"
+      - name: Say hello.js
+        run: node hello.js
