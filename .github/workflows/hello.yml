@@ -27,5 +27,5 @@ jobs:
   Fourth-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Say hello.js
-        run: node hello.js
+      - name: Say script.js
+        run: node script.js
