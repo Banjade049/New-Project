@@ -16,4 +16,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Show date
-        run: date
+        run: |
+          export TZ=Asia/Kathmandu
+          date
