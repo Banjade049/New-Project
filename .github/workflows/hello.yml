@@ -19,3 +19,18 @@ jobs:
         run: |
           export TZ=Asia/Kathmandu
           date
+          
+  Third-job:
+   runs-on: ubuntu-latest
+   steps:
+     - name: print in different line
+       run: |
+         echo "sam"
+         echo "hari"
+         echo " ram"
+
+  Fourth-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: using semiclon
+        run: echo "ram"; echo "hari"; echo "jack"
