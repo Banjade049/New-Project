@@ -1,0 +1,13 @@
+name: My new YAML file
+
+on:
+  push:
+    paths:
+      - script.js
+
+jobs:
+  First-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "File is changed"
